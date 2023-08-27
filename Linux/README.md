@@ -470,6 +470,13 @@ Create a user
 
 => 'id' command will display user account information
 
+The command adds an entry to the ```/etc/passwd```, ```/etc/shadow```, ```/etc/group```, and ```/etc/gshadow``` files.
+
+To be able to log in as the newly created user, you need to set the user password. To do that run the passwd command followed by the username:
+
+	$ sudo passwd username
+You will be prompted to enter and confirm the password. Make sure you use a strong password.
+
 => Check the files available in the home directory 
 
 	$ ls -l
