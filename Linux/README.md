@@ -370,13 +370,13 @@ To create a secure environment in Linux, you need to learn about user groups and
 
 Let's start by talking about the ownership of Linux files.
 
-##User##: the owner of the file (person who created the file).
+**User**: the owner of the file (person who created the file).
 
-##Group##: The group can contain multiple users. 
+**Group**: The group can contain multiple users. 
 
 Therefore, all users in that group will have the same permissions. It makes things easier than assigning permission for every user you want.
 
-##Other##: any person has access to that file, that person has neither created the file nor are they in any group that has access to that file.
+**Other**: any person has access to that file, that person has neither created the file nor are they in any group that has access to that file.
 
 Execute ``` ls -l ``` command to file's permissions
 
@@ -544,9 +544,9 @@ Working with 'find' and 'locate' commands
 
 find command
 ------------------------------------------
-=> find command will search for the files in the entire Linux file system.
-=> find command providing advanced searching technique
-=> Using the find command, we can search for the files based on name and type.
+find command will search for the files in the entire Linux file system.
+find command providing advanced searching technique
+Using the find command, we can search for the files based on name and type.
 
 Find Files Under the Home Directory
 	
