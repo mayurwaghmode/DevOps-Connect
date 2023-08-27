@@ -1,6 +1,6 @@
 # DevOps-Connect
 
-# Run Linux from a Web Browser with this website - http://copy.sh/v86/?profile=linux26
+# Run Linux from a Web Browser with [this website]( http://copy.sh/v86/?profile=linux26)
 
 # Linux Commands
 
@@ -31,34 +31,34 @@ $ touch f3.txt f4.txt
 ```
 	
 **ls**: To display files we will use the 'ls' command
-Note: We can pass several options for 'ls' commands
+> Note: We can pass several options for 'ls' commands
 
-**ls**: It will display all files in alphabetical order (a to z)
++ **ls**: It will display all files in alphabetical order (a to z)
 
-**ls -r**: It will display all files in reverse alphabetical order (z to a)
++ **ls -r**: It will display all files in reverse alphabetical order (z to a)
 
-**ls -l**: It will display a long listing of files
++ **ls -l**: It will display a long listing of files
 
-**ls -t**: It will display all files based on the last modified date and time. The most recent file will be displayed at the top and old files will display at the bottom.
++ **ls -t**: It will display all files based on the last modified date and time. The most recent file will be displayed at the top and old files will display at the bottom.
 
-**ls -rt**: It will display all files based on the reverse of the last modified date and time. Old files will display at the top and recent files will display bottom.
++ **ls -rt**: It will display all files based on the reverse of the last modified date and time. Old files will display at the top and recent files will display bottom.
 
-**ls -a**: It will display all files including hidden files (hidden files will start with .)
++ **ls -a**: It will display all files including hidden files (hidden files will start with .)
 
-**ls -li**: It will display files with the inode.
++ **ls -li**: It will display files with the inode.
 
-**ls -lR**: It will display all files and directories along with subdirectories content
++ **ls -lR**: It will display all files and directories along with subdirectories content
 
-**Note**: -R represents recursive
++ **Note**: -R represents recursive
 
-Note:  We can use several options for the ls command at a time. When we are using multiple options order of the options is not important
+> Note:  We can use several options for the ls command at a time. When we are using multiple options order of the options is not important
 
 	$ ls -ltr
 	$ ls -tlr
 	$ ls -l -t -r
 	$ ls -trl
 
-Note: All the above commands will give the same output
+> Note: All the above commands will give the same output
 
 **cat**: To create/display a file with data we will use the 'cat' command
 
@@ -74,7 +74,7 @@ $ cat >> hello.txt (To append data in the file)
 Press CTRL + d (to save and exit)
 ```
 
-**mkdir**:  To create a directory we will use 'mkdir' command
++ **mkdir**:  To create a directory we will use 'mkdir' command
 
 	$ mkdir dirname
 
@@ -83,17 +83,17 @@ Press CTRL + d (to save and exit)
 
 	$ rm filename	
 
-**rmdir**: To remove the empty directory we will use 'rmdir' command
++ **rmdir**: To remove the empty directory we will use 'rmdir' command
 
 	$ rmdir dirname
 
-## Reversing File Content ##
+## Reversing File Content 
 
-**tac**: command is used to reverse file content
++ **tac**: command is used to reverse file content
 
 	$ tac filename
 
-**rev**: command is used to reverse each line content of the file
++ **rev**: command is used to reverse each line content of the file
 
 	$ rev filename
 
@@ -139,7 +139,7 @@ Rename the files or directories
 
 	$ mv  dirname dirnewname
 
-Note: We can use the 'mv' command for renaming and moving files
+> Note: We can use the 'mv' command for renaming and moving files
 
 ## Comparing files
 ---------------
@@ -161,7 +161,7 @@ Ex: I want to print all lines which contain 'NullPointerException'
 
 	$ grep -i 'NullPointerException' *
 
-Note: We can install grep using the below command
+> Note: We can install grep using the below command
 
 	$ sudo yum install grep
 
@@ -177,19 +177,19 @@ search for the given text in the present directory and in sub-directories also
 	
  	$ grep -R 'exception'
 
-=> We can pass several options for the 'grep' command
+> We can pass several options for the 'grep' command
 
--c: This prints only the count of files that match the given pattern
++ -c: This prints only the count of files that match the given pattern
 
--i: ignore case-sensitivity
++ -i: ignore case-sensitivity
 
--n: Display the matched lines and their line numbers
++ -n: Display the matched lines and their line numbers
 
--l: Displays only file names that match the pattern
++ -l: Displays only file names that match the pattern
 
--h: Displays matched lines without file names
++ -h: Displays matched lines without file names
 
--R: Displays matched lines with file names
++ -R: Displays matched lines with file names
 
 --------------------------------------------------------------------------------------------
 
@@ -256,35 +256,35 @@ To move around within a file without affecting text must be in command mode (pre
 
 Commands and their Description
 ---------------------------------
-**K**: Moves the cursor up one line
++ **K**: Moves the cursor up one line
 
-**j**: Moves the cursor down one line
++ **j**: Moves the cursor down one line
 
-**h**: Moves the cursor to the left one-character position
++ **h**: Moves the cursor to the left one-character position
 
-**l**: Moves the cursor to the right one-character position
++ **l**: Moves the cursor to the right one-character position
 
-**0** or **|**: Positions cursor at the beginning of a line
++ **0** or **|**: Positions cursor at the beginning of a line
 
-**$**: Positions cursor at end of the line
++ **$**: Positions cursor at end of the line
 
-**W**: Positions cursor to the next word
++ **W**: Positions cursor to the next word
 
-**B**: Positions cursor to the previous word
++ **B**: Positions cursor to the previous word
 
-**(**: Positions cursor to the beginning of a current sentence
++ **(**: Positions cursor to the beginning of a current sentence
 
-**)**: Positions cursor to the beginning of the next sentence
++ **)**: Positions cursor to the beginning of the next sentence
 
-**H**: Move to the top of the screen
++ **H**: Move to the top of the screen
 
-**nH**: Moves to an nth line from the top of the screen
++ **nH**: Moves to an nth line from the top of the screen
 
-**M**: Move to the middle of the screen
++ **M**: Move to the middle of the screen
 
-**L**: Move to the bottom of the screen
++ **L**: Move to the bottom of the screen
 
-**nL**: Moves to nth line from the bottom of the screen
++ **nL**: Moves to nth line from the bottom of the screen
 
 colon along with x: Colon followed by a number would position the cursor on the line number represented by x.
 
@@ -355,13 +355,13 @@ To Delete from the nth to the last line
 	$ sed '12,$d' myfile.txt
 
 
-Note: By default, SED command changes will not be stored in the file.
+> Note: By default, SED command changes will not be stored in the file.
 
 To make SED command changes to the file permanently we will use the '-i' option.
 
 	$ sed -i 's/unix/linux/g' myfile.txt  
 
-Note: With the above command 'unix' keyword will be replaced with the 'linux' keyword in the file permanently.
+> Note: With the above command 'unix' keyword will be replaced with the 'linux' keyword in the file permanently.
 
 File permissions
 ================
@@ -370,13 +370,13 @@ To create a secure environment in Linux, you need to learn about user groups and
 
 Let's start by talking about the ownership of Linux files.
 
-**User**: the owner of the file (person who created the file).
++ **User**: the owner of the file (person who created the file).
 
-**Group**: The group can contain multiple users. 
++ **Group**: The group can contain multiple users. 
 
 Therefore, all users in that group will have the same permissions. It makes things easier than assigning permission for every user you want.
 
-**Other**: any person has access to that file, that person has neither created the file nor are they in any group that has access to that file.
++ **Other**: any person has access to that file, that person has neither created the file nor are they in any group that has access to that file.
 
 Execute ``` ls -l ``` command to file's permissions
 
