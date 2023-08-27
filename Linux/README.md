@@ -294,6 +294,7 @@ colon along with x: Colon followed by a number would position the cursor on the 
 We will use the 'vi' editor to perform the below activities
 
 a) To edit config files of our application
+
 b) To edit shell script files
 
 Working with SED command
@@ -313,7 +314,7 @@ Example:
 $ cat > myfile.txt
 unix is great os. Unix is open source. Unix is a free OS.
 learn operating systems.
-unix Linux Which one did you choose?
+Unix Linux Which one did you choose?
 Unix is easy to learn. Unix is a multiuser OS. Learn Unix. Unix is powerful.
 ```
 
@@ -323,11 +324,11 @@ Sed command is mostly used to replace the text in a file. The below simple sed c
 
 	$sed 's/unix/linux/' myfile.txt
 
-By default, the sed command replaces the first occurrence of the pattern in each line and it wonâ€™t replace the second, thirdâ€¦occurrence in the line.
+By default, the sed command replaces the first occurrence of the pattern in each line and it won't replace the second, or third occurrence in the line.
 
 Replacing the nth occurrence of a pattern in a line : 
 ---------------------------------------------------
-Use the /1, /2 etc flags to replace the first, and second occurrence of a pattern in a line. The below command replaces the second occurrence of the word unix with linux in a line.
+Use the /1, /2 etc flags to replace the first, and second occurrence of a pattern in a line. The below command replaces the second occurrence of the word Unix with Linux in a line.
 
 	$sed 's/unix/linux/2' geekfile.txt
 
@@ -376,7 +377,7 @@ Let's start by talking about the ownership of Linux files.
 
 Therefore, all users in that group will have the same permissions. It makes things easier than assigning permission for every user you want.
 
-+ **Other**: any person has access to that file, that person has neither created the file nor are they in any group that has access to that file.
++ **Other**: any person has access to that file, that person has neither created the file nor is he or they in any group that has access to that file.
 
 Execute ``` ls -l ``` command to file's permissions
 
@@ -453,7 +454,7 @@ Then the permission will be: ```-rwxrw-r-x```
 Working with User Accounts
 ==========================
 
-Linux is a multi-user-based operating systems
+Linux is a multi-user-based operating system
 
 Within one Linux machine, we can create multiple user accounts
 
@@ -468,7 +469,7 @@ Create a user
 
 	$ id <uname>
 
-=> 'id' command will display user account information
+> The 'id' command will display user account information
 
 The command adds an entry to the ```/etc/passwd```, ```/etc/shadow```, ```/etc/group```, and ```/etc/gshadow``` files.
 
@@ -561,7 +562,7 @@ Find Files Under the Home Directory
 
 Find Files With 777 Permissions
 
-   	find. -type f -perm 0777 -print
+   	find . -type f -perm 0777
 
 Find all Empty Files
 
