@@ -25,9 +25,9 @@ We have 3 types of files in Linux
 **touch**: It is used to create an empty file
 
 ```
-		$ touch f1.txt
-		$ touch f2.txt
-		$ touch f3.txt f4.txt
+	$ touch f1.txt
+	$ touch f2.txt
+	$ touch f3.txt f4.txt
 ```
 	
 **ls**: To display files we will use the 'ls' command
@@ -49,81 +49,80 @@ Note: We can pass several options for 'ls' commands
 
 **ls -lR**: It will display all files and directories along with subdirectories content
 
-	Note: -R represents recursive
+**Note**: -R represents recursive
 
 Note:  We can use several options for the ls command at a time. When we are using multiple options order of the options is not important
 
-		$ ls -ltr
-		$ ls -tlr
-		$ ls -l -t -r
-		$ ls -trl
+	$ ls -ltr
+	$ ls -tlr
+	$ ls -l -t -r
+	$ ls -trl
 
 Note: All the above commands will give the same output
 
 **cat**: To create/display a file with data we will use the 'cat' command
 
 ```
-		$ cat > hello.txt
-		//write data
-		Press CTRL + d (to save and exit)
+	$ cat > hello.txt
+	//write data
+	Press CTRL + d (to save and exit)
 
-		$ cat hello.txt   (To display file data)
+	$ cat hello.txt   (To display file data)
 
-		$ cat >> hello.txt (To append data in the file)
-		//write data
-		Press CTRL + d (to save and exit)
+	$ cat >> hello.txt (To append data in the file)
+	//write data
+	Press CTRL + d (to save and exit)
 ```
 
 **mkdir**:  To create a directory we will use 'mkdir' command
 
-		$ mkdir dirname
+	$ mkdir dirname
 
 
 **rm**: To remove the file we will use 'rm' command
 
-       		$ rm filename	
+	$ rm filename	
 
 **rmdir**: To remove the empty directory we will use 'rmdir' command
 
-		$ rmdir dirname
+	$ rmdir dirname
 
 ## Reversing File Content ##
 
 **tac**: command is used to reverse file content
 
-	   	$ tac filename
+	$ tac filename
 
 **rev**: command is used to reverse each line content of the file
 
-	  	$ rev filename
+	$ rev filename
 
 
 ## head command
 **head**:  command is used to display file data from the top (default 10 lines)
 ```
-		$ head filename
-		$ head -n 5 data.log  (first 5 lines data)
-		$ head -n 20 data.log (first 20 lines data)
+	$ head filename
+	$ head -n 5 data.log  (first 5 lines data)
+	$ head -n 20 data.log (first 20 lines data)
 ```
 ## tail command
 
 **tail**: command is used to display file data from the bottom (default 10 lines)
 ```
-		$ tail filename (last 10 lines data)
-		$ tail -n 100 filename (last 100 lines data)
-		$ tail +25 filename (it will display data from 25th line to bottom)
+	$ tail filename (last 10 lines data)
+	$ tail -n 100 filename (last 100 lines data)
+	$ tail +25 filename (it will display data from 25th line to bottom)
 ```	
 
 Note: To see on-growing logs we can use '-f' option
 
-		$ tail -f data.log   (Live log message we can see)
-
+	$ tail -f data.log   (Live log message we can see)
 
 ## wc command
 
 **wc**: It is used to count no.of lines, no.of words, and no.of characters in the file
 
-     		$ wc f1.txt ```
+     	$ wc f1.txt 
 
 ## cp command
 
@@ -166,14 +165,17 @@ Note: We can install grep using the below command
 
 	$ sudo yum install grep
 
-//Search for the lines that contain the given word in the given filename
-$ grep 'word' filename
+Search for the lines that contain the given word in the given filename
 
-//search for the lines which are having exception keyword in the server.log file
-$ grep -i 'exception' server.log 
+	$ grep 'word' filename
 
-//search for the given text in the present directory and in sub-directories also
-$ grep -R 'exception'
+Search for the lines that have exception keywords in the server.log file
+	
+ 	$ grep -i 'exception' server.log 
+
+search for the given text in the present directory and in sub-directories also
+	
+ 	$ grep -R 'exception'
 
 => We can pass several options for the 'grep' command
 
@@ -201,8 +203,7 @@ Using vi editor, we can edit an existing file or create a new file from scratch.
 
 We can also use this editor to just read a text file.
 
-Modes of Operation in vi editor 
-+++++++++++++++++++++++++++++++++
+**Modes of Operation in vi editor** 
 There are three modes of operation in vi:
 
 1) command mode
@@ -241,41 +242,41 @@ There are the following ways you can start using vi editor :
 
 Commands and their Description
 ---------------------------------
-vi filename: Creates a new file if it already does not exist, otherwise opens the existing file.
-vi -R filename: Opens an existing file in read-only mode.
-view filename: Opens an existing file in read-only mode.
+**vi filename**: Creates a new file if it already does not exist, otherwise opens the existing file.
+**vi -R filename**: Opens an existing file in read-only mode.
+**view filename**: Opens an existing file in read-only mode.
 
 	vi f1.txt
 
-=> After making changes if we don't want to save those changes then execute: ```q!```
+After making changes if we don't want to save those changes then execute: ```q!```
 
-Moving within a File(Navigation):
+**Moving within a File(Navigation)**:
 -----------------------------------
 To move around within a file without affecting text must be in command mode (press Esc twice). Here are some of the commands that can be used to move around one character at a time.
 
 Commands and their Description
 ---------------------------------
-K: Moves the cursor up one line.
-j: Moves the cursor down one line.
-h: Moves the cursor to the left one character position.
-l: Moves the cursor to the right one-character position.
-0 or |: Positions cursor at the beginning of a line.
-$: Positions cursor at end of the line.
-W: Positions cursor to the next word.
-B: Positions cursor to the previous word.
-(: Positions cursor to the beginning of a current sentence.
-): Positions cursor to the beginning of the next sentence.
-H: Move to the top of the screen.
-nH: Moves to an nth line from the top of the screen.
-M: Move to the middle of the screen.
-L: Move to the bottom of the screen.
-nL: Moves to nth line from the bottom of the screen.
+**K**: Moves the cursor up one line
+**j**: Moves the cursor down one line
+**h**: Moves the cursor to the left one-character position
+**l**: Moves the cursor to the right one-character position
+**0** or **|**: Positions cursor at the beginning of a line
+**$**: Positions cursor at end of the line
+**W**: Positions cursor to the next word
+**B**: Positions cursor to the previous word
+**(**: Positions cursor to the beginning of a current sentence
+**)**: Positions cursor to the beginning of the next sentence
+**H**: Move to the top of the screen
+**nH**: Moves to an nth line from the top of the screen
+**M**: Move to the middle of the screen
+**L**: Move to the bottom of the screen
+**nL**: Moves to nth line from the bottom of the screen
 colon along with x: Colon followed by a number would position the cursor on the line number represented by x.
 
 
-Usecase
+**Usecase**
 -------
--> We will use the 'vi' editor to perform the below activities
+We will use the 'vi' editor to perform the below activities
 
 a) To edit config files of our application
 b) To edit shell script files
@@ -294,11 +295,11 @@ SED command in Unix supports regular expression which allows it to perform compl
 
 Example:
 ```
-$ cat > myfile.txt
-unix is great os. unix is open source. unix is free os.
-learn operating systems.
-unix Linux Which one did you choose?
-unix is easy to learn. Unix is a multiuser OS. Learn Unix. unix is powerful.
+	$ cat > myfile.txt
+	unix is great os. unix is open source. Unix is a free os.
+	learn operating systems.
+	unix Linux Which one did you choose?
+	unix is easy to learn. Unix is a multiuser OS. Learn Unix. Unix is powerful.
 ```
 
 Replacing or substituting string : 
@@ -354,18 +355,17 @@ To create a secure environment in Linux, you need to learn about user groups and
 
 Let's start by talking about the ownership of Linux files.
 
-## User ##: the owner of the file (person who created the file).
+##User##: the owner of the file (person who created the file).
 
-## Group ##: The group can contain multiple users. 
+##Group##: The group can contain multiple users. 
 
 Therefore, all users in that group will have the same permissions. It makes things easier than assigning permission for every user you want.
 
-## Other ##: any person has access to that file, that person has neither created the file nor are they in any group that has access to that file.
+##Other##: any person has access to that file, that person has neither created the file nor are they in any group that has access to that file.
 
-=> Execute ``` ls -l ``` command to file's permissions
+Execute ``` ls -l ``` command to file's permissions
 
-
-We will work with this part â€œ-rw-râ€“râ€“.
+We will work with this part ```-rw-r--r--```.
 
 The characters mean:
 
@@ -376,14 +376,14 @@ r-- = read.
 
 	-rw-r--r--
 
--: It represents file
-rw-: User
-r--: Group
-r--: Other
+**-**: It represents file
+**rw-**: User
+**r--**: Group
+**r--**: Other
 
-As we see above, the empty first part means that it is a file. If it were a directory then it would be the letter â€œdâ€ instead. 
+As we see above, the empty first part means that it is a file. If it were a directory then it would be the letter ```d``` instead. 
 
-The second part means that the user â€œHomeâ€ has read and write permissions but he does not have the execute one.
+The second part means that the user ``` rw-``` has read and write permissions but he does not have the execute one.
 
 The group and others have only the read permission.
 
@@ -395,21 +395,21 @@ This command will add the write permission for other users to my text file â€
 
 Now if you try to execute ls -l then you will see -rw-r--rw-
 
-â€œoâ€ refers to others, â€œgâ€ for the group, â€œuâ€ for the user, and â€œaâ€ for all.
+```rw-``` refers to others, ```r--``` for the group, ```rw-``` for the user.
 
 Now let's add the execute permission to the user with the:
 
 	$ chmod u+x section.txt
 
-The permissions will be -rwxr--rw-
+The permissions will be ```-rwxr--rw-```
 
-If you want to remove the permission, you can use the same method but with â€œ-â€ instead of â€œ+â€. 
+If you want to remove the permission, you can use the same method but with ```u-x``` instead of ```u+x```. 
 
 For example, let's remove the execute permission from the user by:
 
 	$ chmod u-x section.txt
 
-And the permissions now are: -rw-r--rw-
+And the permissions now are: ```-rw-r--rw-```
 
 Also, you can use Symbolic Mode to modify permissions like the following:
 
@@ -427,25 +427,25 @@ For example, let's give every permission for all with:
 
 	$ chmod 777 section.txt
 
-Then the permissions will be: -rwxrwxrwx.
+Then the permissions will be: ```-rwxrwxrwx```
 
 Let's remove the execute from the group and the write from other by:
 
 	$ chmod 765 section.txt
 		
-Then the permission will be: -rwxrw-r-x
+Then the permission will be: ```-rwxrw-r-x```
 
 Working with User Accounts
 ==========================
 
-=> Linux is multi-user based operating systems
+Linux is a multi-user based operating systems
 
-=> Within one Linux machine we can create multiple user accounts
+Within one Linux machine, we can create multiple user accounts
 
-=> Multiple users can access a single Linux machine and can perform multitasking
+Multiple users can access a single Linux machine and can perform multitasking
 
 Create a user
-+++++++++++++
+==========================
 
 	$ sudo adduser <uname>
 
@@ -507,19 +507,19 @@ Delete a group
 	$ sudo groupdel <groupname>
 
 locate command
-++++++++++++++++
+------------------------------------------
 The locate Command will search for data in the local DB
 
 ```
-$ sudo apt install mlocate
+	$ sudo apt install mlocate
 
-$ locate apache
+	$ locate apache
 
-$ locate -c apache
+	$ locate -c apache
 
-$ locate -c *.txt
+	$ locate -c *.txt
 
-$ locate -S (to see locate database)
+	$ locate -S (to see locate database)
 ```
 
 Note: When we create new files it will take some time to update those files in locate db
@@ -528,18 +528,18 @@ Working with 'find' and 'locate' commands
 ------------------------------------------
 
 find command
-+++++++++++++
+------------------------------------------
 => find command will search for the files in the entire Linux file system.
 => find command providing advanced searching technique
 => Using the find command, we can search for the files based on name and type.
 
 Find Files Under the Home Directory
 	
-		find /home -name f1.txt
+	find /home -name f1.txt
 
 Find Files With 777 Permissions
 
-   		find. -type f -perm 0777 -print
+   	find. -type f -perm 0777 -print
 
 Find all Empty Files
 
@@ -550,11 +550,10 @@ Find all Empty Directories
 	find /home -type d -empty
 
 Note: As the find command is scanning the entire file system, it will take more time to give search results.
-
 ----------------------------------------------------------------------------------------------
 **man**: command is like a help command. It is used to understand command syntax and options.
 
-		$ man cat
+	$ man cat
 
 **ifconfig**: To see ip address we will use the 'ifconfig' command
 
@@ -575,4 +574,3 @@ Note: ifconfig is not installed then execute the below command
 **wget**: command is used to download resources from the internet
 
 	$ wget <url>
-
