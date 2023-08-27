@@ -13,7 +13,7 @@
 **cal** : To display calendar
 
 
-In Linux everything everything will be represented as a file
+In Linux everything will be represented as a file
 
 We have 3 types of files in Linux
 
@@ -25,9 +25,9 @@ We have 3 types of files in Linux
 **touch**: It is used to create an empty file
 
 ```
-	$ touch f1.txt
-	$ touch f2.txt
-	$ touch f3.txt f4.txt
+$ touch f1.txt
+$ touch f2.txt
+$ touch f3.txt f4.txt
 ```
 	
 **ls**: To display files we will use the 'ls' command
@@ -63,15 +63,15 @@ Note: All the above commands will give the same output
 **cat**: To create/display a file with data we will use the 'cat' command
 
 ```
-	$ cat > hello.txt
-	//write data
-	Press CTRL + d (to save and exit)
+$ cat > hello.txt
+//write data
+Press CTRL + d (to save and exit)
 
-	$ cat hello.txt   (To display file data)
+$ cat hello.txt   (To display file data)
 
-	$ cat >> hello.txt (To append data in the file)
-	//write data
-	Press CTRL + d (to save and exit)
+$ cat >> hello.txt (To append data in the file)
+//write data
+Press CTRL + d (to save and exit)
 ```
 
 **mkdir**:  To create a directory we will use 'mkdir' command
@@ -101,34 +101,34 @@ Note: All the above commands will give the same output
 ## head command
 **head**:  command is used to display file data from the top (default 10 lines)
 ```
-	$ head filename
-	$ head -n 5 data.log  (first 5 lines data)
-	$ head -n 20 data.log (first 20 lines data)
+$ head filename
+$ head -n 5 data.log  (first 5 lines data)
+$ head -n 20 data.log (first 20 lines data)
 ```
 ## tail command
 
 **tail**: command is used to display file data from the bottom (default 10 lines)
 ```
-	$ tail filename (last 10 lines data)
-	$ tail -n 100 filename (last 100 lines data)
-	$ tail +25 filename (it will display data from 25th line to bottom)
+$ tail filename (last 10 lines data)
+$ tail -n 100 filename (last 100 lines data)
+$ tail +25 filename (it will display data from 25th line to bottom)
 ```	
 
 Note: To see on-growing logs we can use '-f' option
 
-	$ tail -f data.log   (Live log message we can see)
+```$ tail -f data.log   (Live log message we can see)```
 
 ## wc command
 
 **wc**: It is used to count no.of lines, no.of words, and no.of characters in the file
 
-     	$ wc f1.txt 
+```$ wc f1.txt ```
 
 ## cp command
 
 **cp** -To copy the data from one file to another file
 
-	$ cp one.txt two.txt  
+```$ cp one.txt two.txt  ```
 
 
 Rename the files or directories
@@ -155,9 +155,9 @@ diff command will display all the differences in the content
 ------------
 **grep**: stands for global regular expression print.
 
-The 'grep' command will process the text line by line and print any lines that match given pattern.
+The 'grep' command will process the text line by line and print any lines that match the given pattern.
 
-	Ex: I want to print all lines which contain 'NullPointerException'
+Ex: I want to print all lines which contain 'NullPointerException'
 
 	$ grep -i 'NullPointerException' *
 
@@ -257,20 +257,35 @@ To move around within a file without affecting text must be in command mode (pre
 Commands and their Description
 ---------------------------------
 **K**: Moves the cursor up one line
+
 **j**: Moves the cursor down one line
+
 **h**: Moves the cursor to the left one-character position
+
 **l**: Moves the cursor to the right one-character position
+
 **0** or **|**: Positions cursor at the beginning of a line
+
 **$**: Positions cursor at end of the line
+
 **W**: Positions cursor to the next word
+
 **B**: Positions cursor to the previous word
+
 **(**: Positions cursor to the beginning of a current sentence
+
 **)**: Positions cursor to the beginning of the next sentence
+
 **H**: Move to the top of the screen
+
 **nH**: Moves to an nth line from the top of the screen
+
 **M**: Move to the middle of the screen
+
 **L**: Move to the bottom of the screen
+
 **nL**: Moves to nth line from the bottom of the screen
+
 colon along with x: Colon followed by a number would position the cursor on the line number represented by x.
 
 
@@ -295,11 +310,11 @@ SED command in Unix supports regular expression which allows it to perform compl
 
 Example:
 ```
-	$ cat > myfile.txt
-	unix is great os. unix is open source. Unix is a free os.
-	learn operating systems.
-	unix Linux Which one did you choose?
-	unix is easy to learn. Unix is a multiuser OS. Learn Unix. Unix is powerful.
+$ cat > myfile.txt
+unix is great os. Unix is open source. Unix is a free OS.
+learn operating systems.
+unix Linux Which one did you choose?
+Unix is easy to learn. Unix is a multiuser OS. Learn Unix. Unix is powerful.
 ```
 
 Replacing or substituting string : 
@@ -374,7 +389,7 @@ r-- = read.
 --x = execute.
 --- = no permission.
 
-	-rw-r--r--
+```-rw-r--r--```
 
 **-**: It represents file
 **rw-**: User
@@ -383,7 +398,7 @@ r-- = read.
 
 As we see above, the empty first part means that it is a file. If it were a directory then it would be the letter ```d``` instead. 
 
-The second part means that the user ``` rw-``` has read and write permissions but he does not have the execute one.
+The second part means that the user ```rw-``` has read and write permissions but he does not have the execute one.
 
 The group and others have only the read permission.
 
@@ -438,7 +453,7 @@ Then the permission will be: ```-rwxrw-r-x```
 Working with User Accounts
 ==========================
 
-Linux is a multi-user based operating systems
+Linux is a multi-user-based operating systems
 
 Within one Linux machine, we can create multiple user accounts
 
@@ -511,15 +526,15 @@ locate command
 The locate Command will search for data in the local DB
 
 ```
-	$ sudo apt install mlocate
+$ sudo apt install mlocate
 
-	$ locate apache
+$ locate apache
 
-	$ locate -c apache
+$ locate -c apache
 
-	$ locate -c *.txt
+$ locate -c *.txt
 
-	$ locate -S (to see locate database)
+$ locate -S (to see locate database)
 ```
 
 Note: When we create new files it will take some time to update those files in locate db
