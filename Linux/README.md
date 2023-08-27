@@ -76,26 +76,26 @@ Press CTRL + d (to save and exit)
 
 + **mkdir**:  To create a directory we will use 'mkdir' command
 
-	$ mkdir dirname
+```$ mkdir dirname```
 
 
 **rm**: To remove the file we will use 'rm' command
 
-	$ rm filename	
+``` $ rm filename ```	
 
 + **rmdir**: To remove the empty directory we will use 'rmdir' command
 
-	$ rmdir dirname
+``` $ rmdir dirname ```
 
 ## Reversing File Content 
 
 + **tac**: command is used to reverse file content
 
-	$ tac filename
+``` $ tac filename ```
 
 + **rev**: command is used to reverse each line content of the file
 
-	$ rev filename
+``` $ rev filename ```
 
 
 ## head command
