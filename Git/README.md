@@ -3,39 +3,66 @@
 ## Git Commands
 
 ### Initialize a new Git repository in the current directory
-``` git init ```
+``` 
+git init
+```
 
 ### Lists all branches in the repository
-``` git branch ```
+``` 
+git branch 
+```
 
 ### Switch to a Branch
 ``` 
 git checkout <branch_name>
 ```
 ### Show the current status of your working directory
-``` git status ```
+``` 
+git status
+```
 
 ### Make changes and stage them
-``` git add . ```
+``` 
+git add . 
+```
 
 ### Commit changes
-``` git commit -m "<commit-message>" ```
+``` 
+git commit -m "<commit-message>" 
+```
 
 ### list of remote repositories associated with your local Git repository
-``` git remote -v ```
+``` 
+git remote -v 
+```
 
 ### Push changes to the remote repository
-``` git push -u origin master ```
+``` 
+git push -u origin <branch-nam> 
+```
 
 #### Create a new branch
-``` git branch <branch_name> ```
+``` 
+git branch <branch_name> 
+```
 
 ### Setting Global Configuration:
-``` git config --global user.name "mayurwaghmode" ```
-``` git config --global user.email "waghmodemayur17@gmail.com" ```
+``` 
+git config --global user.name "mayurwaghmode"
+git config --global user.email "waghmodemayur17@gmail.com" 
+```
 
 ### Create a copy (clone) of a remote Git repository
-``` git clone ```
+``` 
+git clone <url-of-remote-repo>
+```
+
+### clone the source code from specific branch
+```
+git clone -b <branch-name> <url-of-remote-repo>
+```
 
 ### Show the differences between your working directory and the last committed state
-``` git diff ```
+``` 
+git diff 
+```
