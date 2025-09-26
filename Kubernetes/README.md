@@ -77,7 +77,7 @@ kubectl expose deployment myapp --type=NodePort --port=80   # Expose app
 kubectl get svc                                             # List services
 ```
 
-###Namespaces
+### Namespaces
 ```bash
 kubectl get namespaces
 kubectl create namespace dev
