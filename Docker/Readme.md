@@ -38,7 +38,7 @@ Key benefits:
 No installation required!  
 Practice Docker directly in your browser using the **KillerCoda Docker Playground**:
 
-👉 [**Start the Playground**](https://killercoda.com/playgrounds/scenario/docker)
+👉 [**Start the Playground**](https://labs.play-with-docker.com/)
 
 This provides a Linux environment with Docker pre-installed so you can run commands right away.
 
