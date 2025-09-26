@@ -54,7 +54,7 @@ kubectl version               # Check client & server versions
 kubectl cluster-info          # Show cluster master & services
 kubectl get nodes             # List all nodes
 ```
-###Work with Pods
+### Work with Pods
 ```bash
 kubectl get pods              # List pods in current namespace
 kubectl describe pod <pod>    # Detailed info about a pod
@@ -62,7 +62,7 @@ kubectl logs <pod>            # View logs from a pod
 kubectl exec -it <pod> -- /bin/sh  # Access pod shell
 ```
 
-###Deployments
+### Deployments
 ```bash
 kubectl create deployment myapp --image=nginx   # Create a deployment
 kubectl get deployments                        # List deployments
@@ -71,7 +71,7 @@ kubectl rollout status deployment/myapp         # Check rollout
 kubectl delete deployment myapp                 # Delete deployment
 ```
 
-###Services
+### Services
 ```bash
 kubectl expose deployment myapp --type=NodePort --port=80   # Expose app
 kubectl get svc                                             # List services
