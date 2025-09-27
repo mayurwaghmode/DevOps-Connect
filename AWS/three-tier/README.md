@@ -4,4 +4,3 @@ flowchart LR
     Apache -->|SQL Query| MySQL[MySQL Database<br>(Data Layer)]
     MySQL -->|Data Response| Apache
     Apache -->|HTML Response| Client
-'''
