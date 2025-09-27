@@ -75,6 +75,7 @@ Optional: Specify Region
 aws ec2 describe-instances --region us-east-1 \
     --query "Reservations[].Instances[].{ID:InstanceId,State:State.Name,IP:PublicIpAddress,Tags:Tags}" \
     --output table
+```
 
 ## 6️⃣ Step 5: Troubleshooting
 
