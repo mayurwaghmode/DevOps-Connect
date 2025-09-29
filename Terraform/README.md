@@ -115,13 +115,13 @@ terraform validate
 
 ### Preview the plan
 ```bash
-terraform plan -out=tfplan
+terraform plan 
 ```
-- Shows what Terraform will create. Saved plan for later apply.
+- Shows what Terraform will create. 
 
 ### Apply the plan
 ```bash
-terraform apply "tfplan"
+terraform apply
 ```
 - Creates the EC2 instance. Type **yes** if prompted.
 
