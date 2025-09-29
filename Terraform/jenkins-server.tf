@@ -63,6 +63,9 @@ resource "aws_instance" "jenkins_ec2" {
 
               # Install Java 21 (Amazon Corretto)
               sudo dnf install java-21-amazon-corretto -y
+              sudo yum install jenkins -y
+              sudo systemctl enable jenkins
+              sudo systemctl start jenkins
 
               # Install Docker
               sudo dnf install docker -y
